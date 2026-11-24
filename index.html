@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free, self-guided walking tour of Paisley's history, architecture and hidden stories.">
+  <title>Paisley Touring | Stories Around Every Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Paisley Touring home">
+      <span class="brand-mark">P</span>
+      <span><strong>Paisley</strong><small>TOURING</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#places">Explore places</a>
+      <a href="#route">Walking route</a>
+      <a href="#local">Local tips</a>
+      <a class="nav-cta" href="#route">Start exploring <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR FREE CITY WALK</p>
+        <h1>Discover the stories<br>of <em>Paisley.</em></h1>
+        <p class="hero-copy">A little history. A lot of character. Explore the places, people and stories that shaped this Scottish town — one step at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#places">Explore the places <span>↓</span></a>
+          <a class="text-link light-link" href="#route">See the walking route <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><b>£0</b> to explore</span><i></i><span><b>Self-guided</b> at your pace</span><i></i><span><b>Town centre</b> discoveries</span>
+        </div>
+      </div>
+      <div class="hero-stamp"><span>LOCAL HISTORY</span><b>PAISLEY</b><span>EST. IN STORIES</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div class="intro-kicker">THE TOWN, TOLD DIFFERENTLY</div>
+      <div class="intro-text">
+        <h2>Look closer.<br><em>Find the history.</em></h2>
+        <div><p>From the quiet beauty of the Abbey to the legacy of the thread mills, Paisley has stories tucked into its streets, buildings and green spaces.</p><p>This free guide is designed for students, newcomers and curious locals. Wander at your own pace, learn something unexpected, and find a new favourite corner of town.</p><a class="text-link" href="#route">Plan your walk <span>→</span></a></div>
+      </div>
+      <div class="stats-row">
+        <div><strong>01</strong><span>Walk at your pace</span></div>
+        <div><strong>02</strong><span>Discover local stories</span></div>
+        <div><strong>03</strong><span>Spend little or nothing</span></div>
+      </div>
+    </section>
+
+    <section class="places-section" id="places">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow dark-eyebrow">THE PLACES</p><h2>History is all<br>around you.</h2></div>
+          <p class="heading-note">A few places to begin your Paisley adventure. Check opening times before visiting interiors; many of these sights can be enjoyed from outside.</p>
+        </div>
+        <div class="filter-row">
+          <label class="search-box"><span>⌕</span><input id="place-search" type="search" placeholder="Search places or stories…" aria-label="Search places"></label>
+          <div class="filter-buttons" role="group" aria-label="Filter places">
+            <button class="filter active" data-filter="all">All places</button>
+            <button class="filter" data-filter="architecture">Architecture</button>
+            <button class="filter" data-filter="heritage">Local heritage</button>
+            <button class="filter" data-filter="green">Green spaces</button>
+          </div>
+        </div>
+        <div class="places-grid" id="places-grid">
+          <article class="place-card" data-category="architecture" data-search="paisley abbey medieval church history monks">
+            <div class="place-image image-abbey"><span class="image-label">01 / LANDMARK</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">ARCHITECTURE & FAITH</p><h3>Paisley Abbey</h3><p>A landmark with medieval roots, remarkable stonework and centuries of stories connected to the town.</p><div class="card-bottom"><span>Town centre</span><a href="https://paisleyabbey.org.uk/" target="_blank" rel="noreferrer">Visitor information ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="heritage" data-search="paisley museum textiles pattern shawl thread industry">
+            <div class="place-image image-museum"><span class="image-label">02 / CULTURE</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">TEXTILE & CULTURE</p><h3>Paisley Museum</h3><p>Explore the town's creative legacy, from the famous Paisley Pattern to its textile and industrial past.</p><div class="card-bottom"><span>Town centre</span><a href="https://www.oneren.org/paisley-museum/" target="_blank" rel="noreferrer">Official museum information ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="architecture" data-search="coats memorial church gothic architecture thomas coats">
+            <div class="place-image image-coats"><span class="image-label">03 / ARCHITECTURE</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">GOTHIC GRANDEUR</p><h3>Thomas Coats Memorial Church</h3><p>An imposing Gothic Revival building that reflects the wealth and ambition of Paisley's textile era.</p><div class="card-bottom"><span>Near the centre</span><a href="https://coatspaisley.com/" target="_blank" rel="noreferrer">Local visitor guide ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="heritage" data-search="sma shot cottages weaving handloom weavers industry">
+            <div class="place-image image-cottages"><span class="image-label">04 / LIVING HISTORY</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">WORK & EVERYDAY LIFE</p><h3>Sma’ Shot Cottages</h3><p>A glimpse into the lives of the handloom weavers who helped make Paisley famous for its textiles.</p><div class="card-bottom"><span>Town centre</span><a href="https://www.smashotcottages.com" target="_blank" rel="noreferrer">Check access details ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="architecture" data-search="coats observatory astronomy stars historic building">
+            <div class="place-image image-observatory"><span class="image-label">05 / SCIENCE</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">SCIENCE & CURIOSITY</p><h3>Coats Observatory</h3><p>A distinctive historic observatory, a reminder that Paisley's story includes science as well as industry.</p><div class="card-bottom"><span>Oakshaw area</span><a href="https://discoverrenfrewshire.com/things-to-do/coats-observatory/" target="_blank" rel="noreferrer">Visitor updates ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="green" data-search="fountain gardens park green space fountain paisley">
+            <div class="place-image image-gardens"><span class="image-label">06 / TAKE A BREATHER</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">GREEN SPACE</p><h3>Fountain Gardens</h3><p>A pleasant green pause on your route — ideal for slowing down, resting and taking in the town.</p><div class="card-bottom"><span>Short walk from centre</span><a href="https://www.renfrewshire.gov.uk/parks-libraries-and-culture/parks-gardens-and-outdoor-spaces/fountain-gardens" target="_blank" rel="noreferrer">Explore Paisley ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="architecture" data-search="paisley town hall civic heritage council architecture landmark">
+            <div class="place-image image-townhall"><span class="image-label">07 / CIVIC BUILDING</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">CIVIC HERITAGE</p><h3>Paisley Town Hall</h3><p>A grand civic landmark that reflects the town’s municipal pride and its long-standing role at the heart of daily life.</p><div class="card-bottom"><span>Town centre</span><a href="https://paisleytownhall.org/" target="_blank" rel="noreferrer">Check official info ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="heritage" data-search="old paisley cemetery graves heritage memorials history town church">
+            <div class="place-image image-cemetery"><span class="image-label">08 / QUIET STORIES</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">HISTORIC MEMORY</p><h3>Old Paisley Cemetery</h3><p>Browse the older graves and memorials to trace the names, families and lives that shaped the town across generations.</p><div class="card-bottom"><span>Near the centre</span><a href="https://www.memoriapaisleywoodside.co.uk/cemetery" target="_blank" rel="noreferrer">Cemetery information ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="green" data-search="gleniffer braes hills viewpoint park scenic paisley">
+            <div class="place-image image-braes"><span class="image-label">09 / VIEWS</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">SCENIC OUTLOOK</p><h3>Gleniffer Braes</h3><p>Climb higher for wide views over Paisley and the surrounding valley, then take in a slow, open-air walk.</p><div class="card-bottom"><span>North of town</span><a href="https://www.renfrewshire.gov.uk/parks-libraries-and-culture/parks-gardens-and-outdoor-spaces/gleniffer-braes-country-park" target="_blank" rel="noreferrer">Plan your visit ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="green" data-search="river cart walkway path greenway riverside paisley">
+            <div class="place-image image-river"><span class="image-label">10 / RIVERSIDE</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">WATER & WALKING</p><h3>River Cart Walkway</h3><p>Follow a quieter stretch of the river where the town’s industrial past gives way to open, reflective space.</p><div class="card-bottom"><span>Along the river</span><a href="https://www.google.com/maps/search/River+Cart+Paisley/" target="_blank" rel="noreferrer">Jump to route ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="heritage" data-search="anchor mill paisley industrial heritage building factory">
+            <div class="place-image image-anchor"><span class="image-label">11 / INDUSTRY</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">INDUSTRIAL HERITAGE</p><h3>Anchor Mill Building</h3><p>A reminder of Paisley’s engineering and manufacturing years, still rooted in the town’s working history.</p><div class="card-bottom"><span>Historic core</span><a href="https://discoverrenfrewshire.com/things-to-do/anchor-mill-paisley/" target="_blank" rel="noreferrer">Check information ↗</a></div></div>
+          </article>
+          <article class="place-card" data-category="heritage" data-search="john witherspoon statue paisley heritage landmark historic figure">
+            <div class="place-image image-witherspoon"><span class="image-label">12 / HERITAGE</span><span class="image-symbol">✳</span></div>
+            <div class="place-body"><p class="card-type">LANDMARK & MEMORY</p><h3>John Witherspoon Statue</h3><p>A notable local figure whose story is woven into the wider history of Paisley and the wider world.</p><div class="card-bottom"><span>Town centre</span><a href="https://www.google.com/maps/search/John+Witherspoon+statue+Paisley/" target="_blank" rel="noreferrer">View on map ↗</a></div></div>
+          </article>
+        </div>
+        <div class="places-more" id="places-more" hidden>
+          <button class="button button-dark" id="places-toggle" type="button" aria-expanded="false">See more places ↓</button>
+        </div>
+        <p class="no-results" id="no-results" hidden>No places match that search. Try another word or choose “All places”.</p>
+      </div>
+    </section>
+
+    <section class="route-section" id="route">
+      <div class="section-wrap route-layout">
+        <div class="route-copy"><p class="eyebrow">MAKE A DAY OF IT</p><h2>A walk through<br><em>time.</em></h2><p>Keep it flexible. Start in the town centre, choose the places that interest you and take breaks whenever you like. The route below is a suggested order, not a timed tour.</p>
+          <div class="route-facts"><div><span class="fact-icon">↗</span><span><b>Easy to adapt</b><small>Choose a shorter loop or add stops</small></span></div><div><span class="fact-icon">£</span><span><b>Budget-friendly</b><small>Outdoor stops can be free to enjoy</small></span></div><div><span class="fact-icon">♡</span><span><b>Go at your own pace</b><small>Take time for cafés and quiet spots</small></span></div></div>
+          <a class="button button-dark" href="https://www.google.com/maps/search/historic+places+Paisley+Scotland/" target="_blank" rel="noreferrer">Open places in Maps <span>↗</span></a>
+        </div>
+        <div class="route-list">
+          <div class="route-line"></div>
+          <article class="route-stop"><span class="stop-number">01</span><div><p class="stop-time">BEGIN IN THE CENTRE</p><h3>Paisley Abbey</h3><p>Explore the medieval roots, remarkable stonework and centuries of stories behind this town landmark.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">02</span><div><p class="stop-time">TEXTILE & CULTURE</p><h3>Paisley Museum</h3><p>Discover the Paisley Pattern and the town's creative, textile and industrial past.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">03</span><div><p class="stop-time">GOTHIC GRANDEUR</p><h3>Thomas Coats Memorial Church</h3><p>Take in the Gothic Revival architecture and its connection to Paisley's textile era.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">04</span><div><p class="stop-time">TEXTILE STORIES</p><h3>Sma’ Shot Cottages</h3><p>Get a glimpse of the handloom weavers whose work helped make Paisley famous for textiles.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">05</span><div><p class="stop-time">SCIENCE & CURIOSITY</p><h3>Coats Observatory</h3><p>See a distinctive historic observatory and another side of Paisley's story.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">06</span><div><p class="stop-time">TAKE A BREATHER</p><h3>Fountain Gardens</h3><p>Pause in a green space and take time to rest before continuing your walk.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">07</span><div><p class="stop-time">CIVIC HERITAGE</p><h3>Paisley Town Hall</h3><p>Notice the grand civic architecture and the building's place in town life.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">08</span><div><p class="stop-time">QUIET STORIES</p><h3>Old Paisley Cemetery</h3><p>Read the older graves and memorials to encounter the people and families who shaped Paisley.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">09</span><div><p class="stop-time">SCENIC OUTLOOK</p><h3>Gleniffer Braes</h3><p>For an optional trip beyond the town centre, enjoy open-air walking and views over the surrounding valley.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">10</span><div><p class="stop-time">WATER & WALKING</p><h3>River Cart Walkway</h3><p>Follow the river for a quieter stretch where industrial history meets open space.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">11</span><div><p class="stop-time">INDUSTRIAL HERITAGE</p><h3>Anchor Mill Building</h3><p>Look for reminders of Paisley's manufacturing and engineering history.</p></div><span class="stop-dot"></span></article>
+          <article class="route-stop"><span class="stop-number">12</span><div><p class="stop-time">LANDMARK & MEMORY</p><h3>John Witherspoon Statue</h3><p>End with a local landmark connected to the wider story of Paisley and its people.</p></div><span class="stop-dot"></span></article>
+          <p class="route-note">Walking distances and access can vary. Check a map and current visitor information before setting off.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-section" id="local">
+      <div class="section-wrap local-layout">
+        <div><p class="eyebrow dark-eyebrow">A LITTLE LOCAL KNOW-HOW</p><h2>Make room for<br><em>the unexpected.</em></h2></div>
+        <div class="local-cards">
+          <article class="local-card"><span class="local-icon">☕</span><div><h3>Pause for a coffee</h3><p>Use the map below to find cafés and casual places to eat near your current stop. Check opening times and prices before you go.</p><a href="https://www.google.com/maps/search/cafes+near+Paisley+town+centre/" target="_blank" rel="noreferrer">Find nearby cafés ↗</a></div></article>
+          <article class="local-card"><span class="local-icon">⌖</span><div><h3>Keep it walkable</h3><p>Plan a compact route around the town centre, wear comfortable shoes and leave time for unplanned discoveries.</p><a href="https://www.google.com/maps/search/historic+places+Paisley+Scotland/" target="_blank" rel="noreferrer">View historic places ↗</a></div></article>
+          <article class="local-card"><span class="local-icon">✎</span><div><h3>Follow the stories</h3><p>Use official visitor pages and local heritage resources to learn more. Always credit images and information sources in your own work.</p><a href="https://www.paisley.is/" target="_blank" rel="noreferrer">Paisley visitor guide ↗</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-pattern"></div><div class="closing-content"><p class="eyebrow">YOUR TOWN. YOUR PACE.</p><h2>History doesn't<br>need a ticket.</h2><p>Start walking. Stay curious. See Paisley in a new way.</p><a class="button button-light" href="#places">Choose your first stop <span>↑</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">P</span><span><strong>Paisley</strong><small>TOURING</small></span></a><p>A student-led concept for exploring Paisley's history on a budget.</p><div class="footer-bottom"><span>© <span id="year"></span> Paisley Touring</span><span>Free to explore · Made for curious minds</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
